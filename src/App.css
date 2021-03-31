@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+:root{
+  --main-color: #e2560d;
+  --card-color: #ffffff44
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.default-image{
+  background:linear-gradient(to bottom right, #13080291, #00001134), url(./images/default_image.jpg);
+}
+.App{
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  color: #e6e6ff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  transition: all 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  padding: 4rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main .titles{
+  margin-top: 40%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.main .titles *{
+  margin: 0 20px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+.main .titles p, .titles span{
+  font-size: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.descriptions{
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background-color: var(--card-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.descriptions input, button{
+  width: 100%;
+  background: none;
+  padding: 1rem;
+  color: #f0f8ff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #E7CFBF;
+}
+.descriptions button{
+  background-color: var(--main-color);
+  margin: 10px 0;
+}
+.all-info p{
+  line-height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--main-color);
+  margin: 30px 0;
+}
+.mist{
+  background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/mist.jpg);
+  --main-color: rgb(113, 166, 236);
+  --card-color: #00000033
+}
+.rain{
+  background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/rain.jpg);
+}
+.cloud{
+  background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/clouds.jpg);
+}
+.thunder{
+  background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/thunder.jpg);
+}
+.clear{
+  background:linear-gradient(to bottom right, #05051b1c, #0000111f), url(./images/clear.jpg);
+  background-position: bottom;
 }
