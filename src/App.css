@@ -69,21 +69,21 @@
   border-bottom: 1px solid var(--main-color);
   margin: 30px 0;
 }
-.mist{
+.Mist{
   background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/mist.jpg);
   --main-color: rgb(113, 166, 236);
   --card-color: #00000033
 }
-.rain{
+.Rain, .Drizzy{
   background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/rain.jpg);
 }
-.cloud{
+.Clouds{
   background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/clouds.jpg);
 }
-.thunder{
+.Thunder{
   background:linear-gradient(to bottom right, #05051b91, #00001134), url(./images/thunder.jpg);
 }
-.clear{
+.Clear{
   background:linear-gradient(to bottom right, #05051b1c, #0000111f), url(./images/clear.jpg);
   background-position: bottom;
 }
